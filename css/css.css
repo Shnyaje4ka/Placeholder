@@ -135,8 +135,9 @@ input[type="number"]{width: 110px;
            font-family: cursive;
        position: relative;
        transform: translate(140px, 221px);
-       width: 1200;
+       width: 630px;
        height: 100px;
+       margin-top: 30px;
 
 }
 input[type="checkbox"]{ position: absolute;
@@ -172,14 +173,18 @@ input:checked[type="checkbox"]{background: pink;}
 
 input[type="submit"]{width: 150px;
     height: 40px;
-    transform: translate(380px, 70px);
+    position: absolute;
+    bottom: -140px;
+    right: 0;
     font-size: 16px;
     background: #e5ffff;
     box-shadow: 10px 11px 15px lightslategray;
-    position: relative;
     text-align: center;
     border: 1px solid black;
     cursor: pointer;
     font-family: cursive;
 }
-.onoff>p{transform: translate(10%) 20%;}
+.oh{display: inline-block;
+         line-height: 10;
+         word-spacing: 230px;
+}
