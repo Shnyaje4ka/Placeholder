@@ -96,7 +96,8 @@ input[type="number"]{width: 110px;
 
 .num{width: 115px;
     height: 30px;
-    transform: translate(400px, 157px);
+    display: inline-block;
+    transform: translate(30px, 190px);
     font-size: 16px;
     background: #e5ffff;
     box-shadow: 10px 11px 11px lightslategray;
@@ -106,6 +107,7 @@ input[type="number"]{width: 110px;
     text-align: center;
     border: 1px solid lightgray;
     cursor: pointer;}
+    
 
 .num:before{content:"+";
             position: absolute;
