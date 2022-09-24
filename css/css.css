@@ -44,76 +44,104 @@ textarea:focus{background: #e5ffff;}
 
 select{width: 150px;
        height: 30px;
-       transform: translate(-110px, 190px);
        font-size: 16px;
-       background: #e5ffff;
-       box-shadow: 10px 11px 11px lightslategray;
+       background: transparent;
        appearance: none;
        -webkit-appearance: none;
-       position: relative;
        text-align: center;
        border: 1px solid lightgray;
        cursor: pointer;
 
 
 }
-.sel{display: inline-block;}
+.sel{display: inline-block;
+    width: 150px;
+       height: 30px;
+       transform: translate(-110px, 190px);
+       font-size: 16px;
+       background: #e5ffff;
+       box-shadow: 10px 11px 11px lightslategray;
+       appearance: none;
+       -webkit-appearance: none;
+       text-align: center;
+       border: 1px solid lightgray;
+       cursor: pointer;
+     position: relative;
+}
 .sel:before{content: "";
-            top: 228px;
-            left: 560px;
+            top: 50%;
+            right: 5px;
             position: absolute;
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 5px 5px 0 5px;
             border-color: lightcoral transparent transparent transparent;
-            z-index: 1;
+            z-index: -1;
 
 }
 
 
 input[type="number"]{width: 110px;
                      height: 27px;
-                     transform: translate(400px, 160px);
                      font-size: 16px;
-                     background: #e5ffff;
+                     background: transparent;
                      box-shadow: 10px 11px 11px lightslategray;
                      appearance: none;
                      -webkit-appearance: none;
-                     position: relative;
                      text-align: center;
                      border: 1px solid lightgray;
                      cursor: pointer;
 }
 
-
+.num{width: 115px;
+    height: 30px;
+    transform: translate(400px, 160px);
+    font-size: 16px;
+    background: #e5ffff;
+    box-shadow: 10px 11px 11px lightslategray;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    text-align: center;
+    border: 1px solid lightgray;
+    cursor: pointer;}
 
 .num:before{content:"+";
             position: absolute;
-            top: 220px;
-            left: 634px;
+            top: 5px;
+            right: 5px;
             width: 5px;
             height: 5px;
-            z-index: 1;
+            z-index: -1;
 }
 .num:after{content:"-";
     position: absolute;
-    top: 230px;
-    left: 635px;
+    bottom: 10px;
+    right: 3px;
     width: 5px;
     height: 5px;
-    z-index: 1;
+    z-index: -1;
 }
 
-.onoff{position: absolute;
-       top: 47%;
-       left: 27%;
-       font-family: cursive;
+
+
+
+
+
+.onoff{
+           font-family: cursive;
+       position: relative;
+       transform: translate(140px, 221px);
+       width: 1200;
+       height: 100px;
 
 }
-input[type="checkbox"]{ position: relative;
+input[type="checkbox"]{ position: absolute;
                         width: 80px;
                         height: 40px;
+                        bottom: 0;
+                        left: 100px;
                         background: lightgreen;
                         border-radius: 20px;
                         transition: 2s;
@@ -152,3 +180,4 @@ input[type="submit"]{width: 150px;
     cursor: pointer;
     font-family: cursive;
 }
+.onoff>p{transform: translate(10%) 20%;}
